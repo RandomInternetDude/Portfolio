@@ -112,9 +112,24 @@ class Resume extends Component {
 
 
               <Experience
-                startYear={2019}
-                endYear="Present"
-                jobName="Trellance - Software Engineer"
+                startYear="Dec 2020"
+                endYear="April 2021"
+                jobName="Express Scripts - Full Stack Software Engineer (Contractor)"
+                jobDescription="    
+                Provided expert content/professional leadership on complex Engineering assignments/projects. Responsible for designing and developing enterprise client facing applications, which present and model critical data across Customer, Provider, Claims, Client and Benefits data. Participation in the delivery of the definitive enterprise information environment that enables 
+                strategic decision-making capabilities across enterprise via an analytics and reporting.
+                Exercises considerable creativity, foresight, and judgment in conceiving, planning, and delivering initiatives.
+                Used deep professional knowledge and acumen to advise functional leaders.
+                Focused on providing thought leadership within Information Management but worked on broader projects, which required understanding of wider business strategies.
+                Recognized internally as a subject matter expert on coverage review department, client survey reporting and command center portal web utilities.
+                Wrote referenceable & modular reusable components in React 16 as well as Python Flask.
+                Designed and architected solutions of the internal web utilities used throughout the business."
+                />
+
+              <Experience
+                startYear="Jan 2019"
+                endYear="Dec 2020"
+                jobName="Trellance - Full Stack Software Engineer FTE"
                 jobDescription="    
                  Created dynamic apis and core connectors for data pipelines.
                  Developed and maintained enterprise applications in production software.
@@ -126,8 +141,8 @@ class Resume extends Component {
                 />
 
               <Experience
-                startYear={2018}
-                endYear={2019}
+                startYear="Aug 2018"
+                endYear="Jan 2019"
                 jobName="Verizon - Front End Software Engineer (Contractor)"
                 jobDescription="
                 Coded clean syntax for enterprise grade web applications. 
@@ -141,8 +156,8 @@ class Resume extends Component {
                 Managed multiple applications at once and communicate with teams across Verizon on development solutions. "
                 />
               <Experience
-                startYear={2018}
-                endYear={2018}
+                startYear="Jun 2018"
+                endYear="Aug 2018"
                 jobName="Germinal Resources - Front End Software Developer (Contractor)"
                 jobDescription="
                 Provided web development services for small businesses, startups, & large companies.  
@@ -154,8 +169,8 @@ class Resume extends Component {
                 Created favicons and other application images to match application themes and structure.  "
                 />
               <Experience
-                startYear={2017}
-                endYear={2018}
+                startYear="Dec 2017"
+                endYear="Aug 2018"
                 jobName="Free Lance Web Developer"
                 jobDescription="
                 Provided web development services for clients from various sources. 
