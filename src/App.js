@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import NewNavBar from './components/newNavBar/newNavBar';
 import Default from './components/Default404/Default';
 import Mission from './components/Mission/Mission';
 // import ProjectUC from './components/Projects/ProjectUC';
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <React.Fragment>
           <Navbar></Navbar>
+          <NewNavBar/>
           <Switch>
             <Route exact path="/" component={Mission} />
             <Route path="/resume" component={Resume} />
