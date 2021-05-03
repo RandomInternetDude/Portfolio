@@ -17,7 +17,7 @@ const params = {
           }
         },
         "color": {
-          "value": "#6495ED"
+          "value": "#15cfce"
         },
         "shape": {
           "type": "circle",
@@ -35,7 +35,7 @@ const params = {
           }
         },
         "opacity": {
-          "value": 0.5,
+          "value": 0.2,
           "random": false,
           "anim": {
             "enable": false,
@@ -120,20 +120,33 @@ const params = {
 
 
 
+
 export default class Mission extends Component {
 
     state = {
-      done : undefined
+      done : undefined,
+      loadParticles: undefined
     }
 
     componentDidMount(){
       setTimeout(()=>{
         this.setState({
-          done : true
+          done : true,
+          loadParticles: true
         })
-      },800)
+      },200)
+  
+      
+     
+
+  
+
+     
     }
 
+  
+    
+    
 
     render(){
         return(
@@ -147,13 +160,14 @@ export default class Mission extends Component {
 
                       <div className="cover-container" >
                         
-                          <Particles className="particles" params={params} />
+                           
+                           { this.state.loadParticles ? <Particles className="particles" params={params} /> : false }
                           
 
                           <Typing speed={2} color='white' className='typewriter container' >
                               <div>
                                   <h1 className="">Heroes are remembered,</h1>
-                                  <Typing.Delay ms={1000}/>
+                                  <Typing.Delay ms={1200}/>
                                   <h2>But legends never die...</h2>
                               </div>
                           </Typing>

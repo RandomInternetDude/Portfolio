@@ -35,7 +35,7 @@ export default class Contact extends Component{
               this.setState({
                   done:true
               })
-            }, 800);
+            }, 300);
           }
 
         async handleSubmit(e){

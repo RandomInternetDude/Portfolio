@@ -28,7 +28,7 @@ class Resume extends Component {
       this.setState({
         done: true
       })
-    }, 800);
+    }, 300);
   }
 
 

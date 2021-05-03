@@ -159,3 +159,10 @@ textarea[type=text] {
 .form-control:focus{
   outline:none;
 }
+
+.link{
+  color:#efc29d;
+}
+.link:hover{
+  color:#15cfce;
+}

@@ -13,7 +13,7 @@ class projects extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.appData();
-    }, 1200);
+    }, 200);
   }
 
   appData = () =>

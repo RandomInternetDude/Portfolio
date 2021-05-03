@@ -46,7 +46,7 @@ class Project extends Component {
       <div className="container">
         <div className="card" >
           <div className="card-body">
-          <h4 className="card-title"><a href={this.props.url} target="_blank" rel="noopener noreferrer link">{this.props.name}</a></h4>
+          <h4 className="card-title"><a className="link" href={this.props.url} target="_blank" rel="noopener noreferrer">{this.props.name}</a></h4>
             <h5 className="card-text">{this.props.description}</h5>
             <h6>
             <Octicon icon={Globe} size="small" verticalAlign="middle" />{"  "}

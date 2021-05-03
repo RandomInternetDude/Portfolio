@@ -19,7 +19,7 @@ export default class Metrics extends Component{
           this.setState({
             done : true
           })
-        },1200)
+        },200)
       }
 
 
