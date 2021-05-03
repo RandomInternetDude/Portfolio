@@ -68,7 +68,7 @@ class Resume extends Component {
                 <div className="ml-3 mt-3 mr-4">
                 <Link className='btn btn-primary' to="/resume/JRivera-Resume-2021.docx" target="_blank" download>Download CV</Link>
                 </div>
-                  <a className="mr-4 social-link"  target="_blank"  rel="noopener noreferrer"  href='https://www.linkedin.com/in/joseph-i-rivera/'>
+                  <a className="mr-4 social-link"  target="_blank"  rel="noopener noreferrer"  href='https://www.github.com/joey7040'>
                       <FontAwesomeIcon icon={faGithub} size="4x"/>
                   </a>
                 </div>
