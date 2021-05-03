@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/bootstrap/bootstrap.min.css';
+import 'react-mdl/extra/material.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import NewNavBar from './components/newNavBar/newNavBar';
@@ -18,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
           <NewNavBar/>
           <Switch>
             <Route exact path="/" component={Mission} />

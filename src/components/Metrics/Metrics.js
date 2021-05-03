@@ -32,7 +32,7 @@ export default class Metrics extends Component{
                 <div className="container container-fluid mt-3">
 
                 {!this.state.done ? (
-               <ReactLoading className="center-load" type={"bars"} color={"black"} />
+               <ReactLoading className="center-load" type={"bars"} color={"white"} />
                  ) : (
 
 

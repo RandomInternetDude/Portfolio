@@ -13,24 +13,25 @@ const Section3 = () =>{
     <div className='col'>
             <h2 className="ab-title-3">Fun Facts</h2>
             <div className="ab-text-3">
-                <p>I've been skateboarding for 14 years.</p>
+                <p>I love helping and teaching others coding.</p>
+                <p>I've been skateboarding for 16 years.</p>
                 <p>I was born and raised in florida.</p>
                 <p>I fly drones for fun</p>
-                <p>I used to bar tend.</p>
+                <p>I used to bar tend, and may have been your bartender</p>
                 <p>I'm in love with good food and like to cook it.</p>
-                <p>I'm knowledgeable in cheese and wine.</p>
-                <p>I'm addicted to winning in call of duty warzone.</p>
-                <p>I am a jedi when it comes to programming.</p>
+                <p>I'm knowledgeable in cheese, wine and computer science.</p>
+                <p>I'm addicted breaking other peoples code.</p>
+                <p>I am a jedi.</p>
                 
 
             </div>
             </div>
             <div className='col'>
             <img
-                    src={require('../../assets/img/yoda.jpg')}
+                    src={require('../../assets/img/joeyteachjon.jpg')}
                     alt="gamer-pic"
                     // className="avatar-img-2"
-                    style={{height: '25rem'}}
+                    style={{height: '35rem'}}
                     />
             </div>
     </div>

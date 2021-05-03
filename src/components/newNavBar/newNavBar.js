@@ -19,7 +19,7 @@ export default function NewNavBar() {
     <Nav> 
 
         <NavLink to='/'>
-          {/* <img src={require('../../images/logo.svg')} alt='logo' /> */}
+          Joey Rivera
         </NavLink>
         <Bars />
         <NavMenu>                     
@@ -39,9 +39,9 @@ export default function NewNavBar() {
                 Contact
         </NavLink>
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink to='/'>Joey Rivera</NavBtnLink>
-        </NavBtn>
+        {/* <NavBtn> */}
+          {/* <NavBtnLink to='/'>Joey Rivera</NavBtnLink> */}
+        {/* </NavBtn> */}
     </Nav> 
 
      </>)

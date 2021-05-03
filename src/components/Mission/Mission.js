@@ -141,7 +141,7 @@ export default class Mission extends Component {
 
           <div>
                   {!this.state.done ? (
-               <ReactLoading className="center-load" type={"bars"} color={"black"} />
+               <ReactLoading className="center-load" type={"bars"} color={"white"} />
                  ) : (
 
 
@@ -150,7 +150,7 @@ export default class Mission extends Component {
                           <Particles className="particles" params={params} />
                           
 
-                          <Typing speed={2} className='typewriter container' >
+                          <Typing speed={2} color='white' className='typewriter container' >
                               <div>
                                   <h1 className="">Heroes are remembered,</h1>
                                   <Typing.Delay ms={1000}/>

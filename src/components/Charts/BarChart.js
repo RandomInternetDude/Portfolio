@@ -7,9 +7,24 @@ export default class BarChart extends Component {
         super(props);
         this.state = {
             chartData: {
+                color:'#ffffff',
                 labels: ['Angular', 'React', 'Sencha', 'Vue', 'Webix', 'BackBone'],
+                options: {
+                    plugins: {
+                      legend: {
+                        labels: {
+                          font: {
+                            size: 20,
+                            color: '#ffffff'
+                          },
+                          fontColor: '#ffffff',
+                        }
+                      }
+                    }
+                    },
                 datasets:[{
                     barPercentage: 1,
+                    fontColor: '#ffffff',
                     data:[
                         80,
                         100,

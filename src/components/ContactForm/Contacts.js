@@ -67,7 +67,7 @@ export default class Contact extends Component{
             <div>
                 
                 {!this.state.done ? (
-                  <ReactLoading className="center-load" type={"bars"} color={"black"} />
+                  <ReactLoading className="center-load" type={"bars"} color={"white"} />
                  ) : (
         
            
@@ -76,25 +76,25 @@ export default class Contact extends Component{
                 <div className='container-fluid container col-9 col-lg-6'>
                     <h3>Contact</h3>
                     <div className="container row">
-                   <div className='col'>
+                   {/* <div className='col'>
                     <img src="https://media.giphy.com/media/c9g8VRiOsqDba/giphy.gif" alt=""/>
-                   </div>
+                   </div> */}
 
                   <div className='col'>
 
-                   <div className="row">
+                   {/* <div className="row">
                     <Octicon className='icons' icon={Link} size="medium" verticalAlign="middle" />{"  "}
                    
                     <h4 className="alert-heading mt-2 text">Contact info:</h4>
-                    </div>
+                    </div> */}
                     <div className="row">
-                      <Octicon className='icons' icon={DeviceMobile} size="medium" verticalAlign="middle" />{"  "}
-                      <h5 className='text pl-2'>Phone: 813-847-0551</h5>
+                      <Octicon className='icons' icon={DeviceMobile} size="medium" verticalAlign="top" />{"  "}
+                      <h5 className='text pl-2'>813-847-0551</h5>
                     </div>
                    
                     <div className="row">
-                      <Octicon className='icons' icon={Mail} size="medium" verticalAlign="middle" />{"  "}
-                      <h5 className='text'>Email: Joey7040@hotmail.com</h5>
+                      <Octicon className='icons' icon={Mail} size="medium" verticalAlign="top" />{"  "}
+                      <h5 className='text'>Joey7040@hotmail.com</h5>
                     </div>
                     </div>
                 </div>

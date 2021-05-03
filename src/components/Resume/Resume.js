@@ -3,6 +3,9 @@ import { Grid, Cell } from 'react-mdl';
 import Education from '../Education/Education';
 import Experience from '../Experience/Experience';
 import Skills from '../Skills/skills';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import ReactLoading from 'react-loading';
 import {Link} from 'react-router-dom'
@@ -38,7 +41,7 @@ class Resume extends Component {
 
 
           {!this.state.done ? (
-          <ReactLoading className="center-load" type={"bars"} color={"black"} />
+          <ReactLoading className="center-load" type={"bars"} color={"white"} />
           ) : (
 
 
@@ -47,7 +50,7 @@ class Resume extends Component {
 
 
             <Grid>
-              <Cell col={4}>
+              <Cell col={4.5} phone={8}>
                 <div style={{textAlign: 'center'}}>
                   <img
                     src={myhead}
@@ -63,21 +66,23 @@ class Resume extends Component {
                 <div className="row">
                 
                 <div className="ml-3 mt-3 mr-4">
-                <Link className='btn btn-primary' to="/resume/JRivera-Resume-2020.pdf" target="_blank" download>Download CV</Link>
+                <Link className='btn btn-primary' to="/resume/JRivera-Resume-2021.docx" target="_blank" download>Download CV</Link>
                 </div>
-                <FontAwesomeIcon icon={faCoffee} size="3x"className="m-2" ></FontAwesomeIcon>
+                  <a className="mr-4 social-link"  target="_blank"  rel="noopener noreferrer"  href='https://www.linkedin.com/in/joseph-i-rivera/'>
+                      <FontAwesomeIcon icon={faGithub} size="4x"/>
+                  </a>
                 </div>
-                <h4 style={{color: 'grey'}}>Fullstack Developer</h4>
+                <h4 >Fullstack Developer</h4>
                 
    
-                <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                <hr style={{borderTop: '3px solid #15cdfc', width: '100%'}}/>
                 <p>Hello, my name is Joey Rivera, I’m a mid to senior level full stack developer. Every day I work with technologies such as Python, Javascript, Linux, & Aws Cloud infrustructue. 
                 Working at my current company Trellance, has placed me in the center of making great technology that will drive the future in data analytics for the credit union financial services space.    
                 While creating new features for the ironsafe platform I’ve also createdm deployed, and maintained cloud security architecture. As well as created automated deployment processes for the platforms underlying cloud infrastructure in AWS.
                 For little over a year now I've been working on dynamic apis that create predictive analytics tools for the medical & financial sector. I encourage those who are curious to check out <a href="https://www.trellance.com/ironsafe-data-extraction-platform/">Ironsafe here. </a>
                 When I find free time, I practice for competitve esports and make content to help others improve their skillsets in programming pradigms popular in the job market today.
                 I aspire to contribute as much as possible back to the community that has given me much more than I could ever ask for. </p>
-                <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                <hr style={{borderTop: '3px solid #15cdfc', width: '85%'}}/>
                 <h5>Address</h5>
                 <p>3350 W Hillsborough ave Tampa FL</p>
                 <h5>Phone</h5>
@@ -89,28 +94,29 @@ class Resume extends Component {
 
                
                
-                <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                <hr style={{borderTop: '3px solid #15cdfc', width: '75%'}}/>
                 <div className="social-links-2">
-
-                {/* LinkedIn */}
-                <a href="https://linkedin.com/in/joseph-i-rivera/" rel="noopener noreferrer" target="_blank">
-                  <i className="fa fa-linkedin-square" aria-hidden="true" />
-                </a>
-
-                {/* Github */}
-                <a href="https://github.com/joey7040" rel="noopener noreferrer" target="_blank">
-                  <i className="fa fa-github-square" aria-hidden="true" />
-                </a>
+                <div className="row ml-1">
+                    <a className="mr-4 social-link"  target="_blank"  rel="noopener noreferrer"  href='https://www.linkedin.com/in/joseph-i-rivera/'>
+                    <FontAwesomeIcon icon={faLinkedin} size="4x"/>
+                    </a>
+                    <a className="mr-4 social-link"  target="_blank" rel="noopener noreferrer"  href='https://www.instagram.com/joeyvision/'>
+                    <FontAwesomeIcon icon={faInstagram} size="4x"/>
+                    </a>
+                    <a className="mr-4 social-link"  target="_blank" rel="noopener noreferrer"  href="https://twitter.com/JoeySaiyancoder">
+                    <FontAwesomeIcon icon={faTwitter} size="4x"/>
+                    </a>
+                </div>
 
                 </div>
               
               
               </Cell>
-              <Cell className="resume-right-col" col={8}>
+              <Cell col={8}>
               
               <h2>Experience</h2>
 
-
+              <hr style={{borderTop: '3px solid #d0bba9'}} />
               <Experience
                 startYear="Dec 2020"
                 endYear="April 2021"
@@ -194,7 +200,7 @@ class Resume extends Component {
                 http://extremeautolights.com/"
                 />
             
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid #d0bba9'}} />
               <h2>Education</h2>
 
                 
@@ -222,12 +228,12 @@ class Resume extends Component {
               
 
 
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid #d0bba9'}} />
               <h2>Skills</h2>
              
               <Skills
                 skill="Linux"
-                progress={60}
+                progress={70}
                 />
               <Skills
                 skill="AWS"

@@ -30,7 +30,7 @@ export default class Aboutme extends Component {
             <div>
 
                 {!this.state.done ? (
-                    <ReactLoading className="center-load" type={"bars"} color={"black"} />
+                    <ReactLoading className="center-load" type={"bars"} color={"white"} />
                         ) : (
 
 
