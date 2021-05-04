@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {Switch, Route} from 'react-router-dom';
 import './assets/bootstrap/bootstrap.min.css';
 import 'react-mdl/extra/material.css';
@@ -13,14 +13,25 @@ import Resume from './components/Resume/Resume';
 import projects from './components/Projects/Projects';
 import Metrics from './components/Metrics/Metrics';
 import Aboutme from './components/Aboutme/Aboutme';
+import Dropdown from './components/newNavBar/DropDown/DropDown';
 
 
-class App extends Component {
-  render() {
+function App() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+  
+  
+  const toggle = () =>{
+    setIsOpen(!isOpen)
+  }
+
+
+
     return (
       <React.Fragment>
           {/* <Navbar></Navbar> */}
-          <NewNavBar/>
+          <NewNavBar toggle={toggle}/>
+          <Dropdown isOpen={isOpen} toggle={toggle}/>
           <Switch>
             <Route exact path="/" component={Mission} />
             <Route path="/resume" component={Resume} />
@@ -33,6 +44,6 @@ class App extends Component {
       </React.Fragment>
     );
   }
-}
+
 
 export default App;

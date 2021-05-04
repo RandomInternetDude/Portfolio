@@ -37,12 +37,17 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
+  transition: 0.2s ease-in-out;
+  &:hover{
+    color:#15cdfc;
+  }
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-155%, 105%);
     font-size: 1.8rem;
     cursor: pointer;
   }

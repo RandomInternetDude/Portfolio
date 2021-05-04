@@ -18,15 +18,17 @@ const Section1 = () =>{
 
                         </div>
                     </div>
-                    <div className='col'>
-                    <img
-                            src={require('../../assets/img/meandaidan.jpg')}
-                            alt="gamer-pic"
-                            // className="avatar-img-2"
-                            style={{height: '20rem'}}
-                            />
-                    </div>
                 </div>
+                <div className='row'>
+                    <div className='col'>
+                        <img
+                                src={require('../../assets/img/meandaidan.jpg')}
+                                alt="gamer-pic"
+                                // className="avatar-img-2"
+                                style={{height: '20rem'}}
+                                />
+                        </div>
+                    </div>
             </div>
         </div>
 }
