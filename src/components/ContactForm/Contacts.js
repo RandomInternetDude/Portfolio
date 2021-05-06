@@ -32,6 +32,7 @@ export default class Contact extends Component{
 
         componentDidMount() {
             setTimeout(() => {
+              console.log('here')
               this.setState({
                   done:true
               })
