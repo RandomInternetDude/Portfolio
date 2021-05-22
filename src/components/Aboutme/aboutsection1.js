@@ -1,27 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import './Aboutme.css'
-
-const SectionContainer = styled.div`
-    display: flex;
-    flex-direction: wrap;
-
-    @media screen and (max-width: 786px) {
-        display:inline;
-        align-content:center;
-    }
-`
-const aboutContext = styled.div`
-    margin:2rem;
-    align-items:center;
-    text-overflow:wrap;
-`
-
-const Picture = styled.div`
-    position:relative;
-    align-items:center;
-    margin:1rem;
-`
+import { SectionContainer, aboutContext, Picture} from './AboutmeElements';
 
 
 const Section1 = () =>{
