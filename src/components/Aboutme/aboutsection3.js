@@ -1,16 +1,11 @@
 import React from 'react';
 import {yoda} from '../../assets/img/yoda.jpg'
-import './Aboutme.css'
+import { aboutContext, Picture, SectionContainer } from './AboutmeElements';
 
 console.log(yoda)
 const Section3 = () =>{
-    return <div className="container-fluid ab-3">
-    <div className="container ">
-
-
-    <div className='row'>
-
-    <div className='col'>
+    return <SectionContainer>
+        <aboutContext>
             <h2 className="ab-title-3">Fun Facts</h2>
             <div className="ab-text-3">
                 <p>I love helping and teaching others coding.</p>
@@ -25,24 +20,18 @@ const Section3 = () =>{
                 
 
             </div>
-            </div>
-            <div className='col'>
+        </aboutContext>
+        <Picture>
             <img
-                    src={require('../../assets/img/joeyteachjon.jpg')}
-                    alt="gamer-pic"
-                    // className="avatar-img-2"
-                    style={{height: '35rem'}}
-                    />
-            </div>
-    </div>
+                src={require('../../assets/img/joeyteachjon.jpg')}
+                alt="gamer-pic"
+                // className="avatar-img-2"
+                style={{height: '35rem'}}
+                />
+        </Picture>
 
-
-
-
-
-
-    </div>
-</div>
+    </SectionContainer>
+    
 }
 
 export default Section3

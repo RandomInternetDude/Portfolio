@@ -1,3 +1,8 @@
+.spacer{
+    margin:3em;
+}
+
+
 .about {
     background-image: url('../../assets/img/unsplash_2.jpg');
     background-repeat: no-repeat;
