@@ -4,12 +4,13 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
+import {SectionContainer} from './AboutmeElements';
 
 import './Aboutme.css'
 
 
 const Section4 = () =>{
-    return <div className="container-fluid ab-4">
+    return <SectionContainer>
     <div className="container ">
     <h2 className="ab-title-4">Follow me!</h2>
     <div className="ab-text-4">
@@ -29,7 +30,7 @@ const Section4 = () =>{
         </div>
     </div>
 </div>
-</div>
+</SectionContainer>
 }
 
 export default Section4
