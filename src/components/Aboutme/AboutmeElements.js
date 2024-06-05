@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export const SectionContainer = styled.div`
 display: flex;
 flex-direction: wrap;
-margin: .3em;
+margin: .4em;
 
 @media screen and (max-width: 786px) {
     display:inline;

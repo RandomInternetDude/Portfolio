@@ -12,10 +12,7 @@ import { aboutContext, ChartContainer, SectionContainer } from './AboutmeElement
 
 const Section2 = () =>{
     return <SectionContainer>
-          <ChartContainer>
-                <BarChart/>
-            </ChartContainer>
-            
+        
         <aboutContext>
           
             <h2 className="ab-title-2">My Skills</h2>
@@ -27,7 +24,10 @@ const Section2 = () =>{
             </p>
                 <Link to='metrics' className="btn btn-primary">See more metrics on me</Link>
         </aboutContext>
-
+            <ChartContainer>
+                <BarChart/>
+            </ChartContainer>
+            
     </SectionContainer>
 }
 
